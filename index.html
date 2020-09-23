@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>$(window).load(function() {
+		// Animate loader off screen
+		$(".wr").fadeOut("slow");;
+	});</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Exo&amp;display=swap'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<style>
+  .wr {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 1550px;
+	height: 801px;
+
+	z-index: 9999;
+	background: url('logofinal.gif') center no-repeat ;
+}
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+
+  canvas {
+
+  top: 0;
+  left:0;
+
+  padding-left: 0px;
+  margin-left:0;
+  padding-right:100px;
+  margin-right:20px;
+  height:200px;
+  width:1650px;
+  background-color: black;
+  }
+  body {
+  /* background: linear-gradient(45deg, #00ff00,#cc33ff, #3366ff); */
+  background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+		.carousel {
+                   width:800px;
+                   height:600px;
+                   margin:auto;
+                    }
+		table {
+			padding: 2px;
+			border: 2px ;
+			background-color: rgba(0,0,0,0);
+			font-family=wilmina;
+
+		}
+		@font-face
+		{
+			font-family:york;
+			src:url('fonts/yorkwhiteletter.ttf');
+			font-weight:normal;
+		}
+    @font-face
+		{
+			font-family:wilmina;
+			src:url('fonts/wilmina.ttf');
+			font-weight:normal;
+		}
+
+
+			@font-face{
+			font-family:langrish;
+			src:url("fonts/Langrish Sans.ttf");
+			font-weight: bold;
+		}
+		@font-face{
+			font-family:typo;
+			src:url("fonts/Typo Grotesk Demo.ttf");
+			font-weight: bold;
+		}
+		@font-face{
+			font-family:patua;
+			src:url("fonts/PatuaOne-Regular.ttf");
+			font-weight: bold;
+		}
+		.bar2 li{
+			display:inline;
+			line-height: 100%;
+			text-align: right;
+			background-color: #E0F8F7;
+			padding-right:20px;
+			font-family:patua;
+		}
+		.bar2 ul
+		{
+			border-width: 7px;
+			padding-left: 3px;
+			padding: 3px;
+			background-color:#FF8000;
+		}
+    h1{
+      --animate-duration:10s;
+
+    }
+
+
+		 th {
+		 	font-size: 22px;
+			color: white;
+			text-align: center;
+			padding: 3px;
+			font-family:wilmina;
+
+		}
+	caption {
+		font-size: 30px;
+		color: white;
+		text-align: center;
+	}
+	header
+	{
+		color: white;
+		font-size: 10px;
+		text-shadow: transparent;
+	}
+
+
+	</style>
+	<title>White Rascals</title>
+</head>
+<body>
+  <div class="wr"> </div>
+<center>
+	<img src="logo.png" class="animate__animated animate__flash" style="height:250px; width:300px">
+</center>
+<script>
+function hideLoader() {
+  $('.wr').hide();
+}
+
+// $(window).ready(hideLoader);
+
+// Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+setTimeout(hideLoader, 2.5 * 1000);</script>
+<br>
+<br>
+
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <ul class="nav navbar-nav" >
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="createaccount.html">Sign Up</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- <div class="bar2" align="right">
+<ul  style="font-size:24px;">
+
+	<li ><a href="createaccount.html" target=_blank>Create Account </a></li>
+		<li><a href="Login.html">Login </a></li>
+		<li><a href="contactus.html">Contact Us </a></li>
+		<li><a href="aboutus.html">About Us </a></li>
+	</div>
+</ul> -->
+
+
+<div class="container-fluid">
+
+  <canvas id="c">
+  </canvas>
+  <script>
+  var w = c.width = window.innerWidth,
+      h = c.height = window.innerHeight,
+      ctx = c.getContext( '2d' ),
+
+      minDist = 10,
+      maxDist = 30,
+      initialWidth = 10,
+      maxLines = 100,
+      initialLines = 4,
+      speed = 5,
+
+      lines = [],
+      frame = 0,
+      timeSinceLast = 0,
+
+      dirs = [
+     // straight x, y velocity
+        [ 0, 1 ],
+        [ 1, 0 ],
+        [ 0, -1 ],
+        [ -1, 0 ],
+     // diagonals, 0.7 = sin(PI/4) = cos(PI/4)
+        [ .7, .7 ],
+        [ .7, -.7 ],
+        [ -.7, .7 ],
+        [ -.7, -.7]
+      ],
+      starter = { // starting parent line, just a pseudo line
+
+        x: w / 2,
+        y: h / 2,
+        vx: 0,
+        vy: 0,
+        width: initialWidth
+      };
+
+  function init() {
+
+    lines.length = 0;
+
+    for( var i = 0; i < initialLines; ++i )
+      lines.push( new Line( starter ) );
+
+    ctx.fillStyle = '#222';
+    ctx.fillRect( 0, 0, w, h );
+
+    // if you want a cookie ;)
+    // ctx.lineCap = 'round';
+  }
+  function getColor( x ) {
+
+    return 'hsl( hue, 80%, 50% )'.replace(
+      'hue', x / w * 360 + frame
+    );
+  }
+  function anim() {
+
+    window.requestAnimationFrame( anim );
+
+    ++frame;
+
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = 'rgba(0,0,0,.02)';
+    ctx.fillRect( 0, 0, w, h );
+    ctx.shadowBlur = .5;
+
+    for( var i = 0; i < lines.length; ++i )
+
+      if( lines[ i ].step() ) { // if true it's dead
+
+        lines.splice( i, 1 );
+        --i;
+
+      }
+
+    // spawn new
+
+    ++timeSinceLast
+
+    if( lines.length < maxLines && timeSinceLast > 10 && Math.random() < .5 ) {
+
+      timeSinceLast = 0;
+
+      lines.push( new Line( starter ) );
+
+      // cover the middle;
+      ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
+      ctx.beginPath();
+      ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
+      ctx.fill();
+    }
+  }
+
+  function Line( parent ) {
+
+    this.x = parent.x | 0;
+    this.y = parent.y | 0;
+    this.width = parent.width / 1.25;
+
+    do {
+
+      var dir = dirs[ ( Math.random() * dirs.length ) |0 ];
+      this.vx = dir[ 0 ];
+      this.vy = dir[ 1 ];
+
+    } while (
+      ( this.vx === -parent.vx && this.vy === -parent.vy ) || ( this.vx === parent.vx && this.vy === parent.vy) );
+
+    this.vx *= speed;
+    this.vy *= speed;
+
+    this.dist = ( Math.random() * ( maxDist - minDist ) + minDist );
+
+  }
+  Line.prototype.step = function() {
+
+    var dead = false;
+
+    var prevX = this.x,
+        prevY = this.y;
+
+    this.x += this.vx;
+    this.y += this.vy;
+
+    --this.dist;
+
+    // kill if out of screen
+    if( this.x < 0 || this.x > w || this.y < 0 || this.y > h )
+      dead = true;
+
+    // make children :D
+    if( this.dist <= 0 && this.width > 1 ) {
+
+      // keep yo self, sometimes
+      this.dist = Math.random() * ( maxDist - minDist ) + minDist;
+
+      // add 2 children
+      if( lines.length < maxLines ) lines.push( new Line( this ) );
+      if( lines.length < maxLines && Math.random() < .5 ) lines.push( new Line( this ) );
+
+      // kill the poor thing
+      if( Math.random() < .2 ) dead = true;
+    }
+
+    ctx.strokeStyle = ctx.shadowColor = getColor( this.x );
+    ctx.beginPath();
+    ctx.lineWidth = this.width;
+    ctx.moveTo( this.x, this.y );
+    ctx.lineTo( prevX, prevY );
+    ctx.stroke();
+
+    if( dead ) return true
+  }
+
+  init();
+  anim();
+
+  window.addEventListener( 'resize', function() {
+
+    w = c.width = window.innerWidth;
+    h = c.height = window.innerHeight;
+    starter.x = w / 2;
+    starter.y = h / 2;
+
+    init();
+  } )
+
+  </script>
+</div>
+<br>
+<br>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="Images\5.jpg" alt="Los Angeles" >
+      <div class="carousel-caption">
+          <h1 ><a href="createaccount.html">Stay Always Connected</a></h1>
+        </div>
+    </div>
+
+    <div class="item">
+      <img src="Images\6.jpg" alt="Chicago" >
+      <div class="carousel-caption">
+          <h1 > <a href="createaccount.html">Just a Click Away</a></h1>
+        </div>
+    </div>
+
+    <div class="item">
+      <img src="Images\7.jpg" alt="New York">
+      <div class="carousel-caption">
+          <h1> <a href="createaccount.html">Free Sign Up</a></h1>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- <ul style="font-size:30px;color:white;font-family:typo;">
+	<li>Select first option to create account.</li>
+	<li>Select second option to log in.</li>
+	<li>Select the third option to delete account.</li>
+	</ul>
+<dl style="font-size:30px;font-family:arial;color:white;">
+	<dt>Live Chat</dt>
+	<dd>Chat with your friends in real time</dd>
+	<dt>Live status</dt>
+	<dd>Check who is online.</dd> -->
+<!-- </dl> -->
+<br>
+<br>
+<!-- <H1 style="text-align: center;font-family: Arial;font-size: 30px;"> Sign up below
+	</H1>
+	<center>
+	<img src="Images/pic1.jpg" alt="Together" style="height: 400px;width: 600px;" usemap="#map1">
+</center>
+<map name="map1">
+	<area shape="rect" coords="0,100,300,400" href="https://www.facebook.com/">
+	</map>
+	<br>
+	<br>
+	<center> -->
+		<center>
+		<dl style="font-size:30px;font-family:langrish;color:white;"class="animate__animated animate__backInRight">
+	<dt>Live Chat</dt>
+	<dd>Chat with your friends in real time</dd>
+	<dt>Live status</dt>
+	<dd>Check who is online.</dd>
+</dl>
+<br>
+<br>
+<br>
+	 <iframe width="420" height="315"
+src="https://www.youtube.com/embed/JakajdJM1q4">
+</iframe>
+<br>
+<br>
+<AUDIO controls  src="whiteout" autoplay="true">
+  Mugen Forever
+</AUDIO>
+
+	<table style="font-family:wilmina">
+		<caption>Bandwidth Plans</caption>
+		<tr>
+			<th>Free</th>
+			<th>Pro</th>
+			<th>Premium</th>
+		</tr>
+		<tr>
+			<th span style="font-size:18px">1 GB per day</th>
+			<th span style="font-size:18px">2 GB per day</th>
+			<th span style="font-size:18px">Unlimited </th>
+		</tr>
+	</table>
+</center>
+
+</body>
+
+</html>

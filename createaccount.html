@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+	<title>Create Account</title>
+</head>
+
+<body>
+	<center>
+	<div class="jumbotron">
+  <h1>Create Account</h1>
+  <p>Join the most exciting community with just a few clicks</p>
+</div>
+</center>
+<div class="container">
+
+  <ul class="list-inline">
+    <li style="font-size:22px"><a href="index.html">Back to Home</a></li>
+</ul>
+</div>
+
+<div class="container">
+
+  <form action="#" style="padding-right: 60px">
+    <div class="form-group" >
+      <label for="name">Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="form-group">
+    	<label>Gender:</label>
+    </div>
+    <div class="radio">
+  <label><input type="radio" name="optradio" checked>Male</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio">Female</label>
+</div>
+    <div class="input-control">
+      <label for="dob">Date of Birth:</label>
+      <div class="input-group date" data-provide="datepicker">
+      <input type="text" class="form-control" id="dob" placeholder="Enter Date of Birth" name="dob">
+      <div class="input-group-addon">
+      	<span class="glyphicon glyphicon-th"></span>
+    </div>
+      </div>
+  </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default" onclick="validate()">Submit</button>
+  </form>
+</div>
+
+
+
+
+<script>
+
+function validate()
+{
+	var name= document.getElementById("name").value;
+	var email=document.getElementById("email").value;
+	var password=document.getElementById("pwd").value;
+	const namer=new RegExp(/[a-zA-Z]{4,15}\s[a-zA-Z]{3,10}/m);
+  const emailr=new RegExp(/[a-z]{4,10}[0-9]*\@[a-z]{3,7}\.com/);
+  const pwdr=new RegExp(/[a-zA-Z]{3,15}[0-9]{1,15}[a-zA-Z]*/);
+
+	if (namer.test(name)!=true)
+	{
+	alert("Enter a valid name");
+	}
+	if (emailr.test(email)!=true)
+	{
+		alert("Enter a valid mail eg: xyzad123@xyzj.com");
+		document.getElementById("email").value="";
+	}
+	if (pwdr.test(email)!=true)
+	{
+		alert("Password must be atleast 8 chars long and with numbers");
+	}
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
