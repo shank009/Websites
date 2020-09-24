@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="reviewsxsl.xsl"?>
+<REVIEWS>
+	<R id="100">
+		<NAME>Subaru
+		</NAME>
+		<RATING>4 
+		</RATING>
+		<COMMENT>Easy to use and secured chats.
+		</COMMENT>
+	</R>
+	<R id="101">
+		<NAME>Kazuki
+		</NAME>
+		<RATING>4
+		</RATING>
+		<COMMENT>Simple and efficient.
+		</COMMENT>
+	</R>
+	<R  id="102">
+		<NAME>Vlad
+		</NAME>
+		<RATING>3
+		</RATING>
+		<COMMENT>Does the job but the UI could be better
+		</COMMENT>
+	</R>
+	<R id="103">
+		<NAME>Rem
+		</NAME>
+		<RATING>4
+		</RATING>
+		<COMMENT>Works well even with slow connection.
+		</COMMENT>
+	</R>
+	<R id="104">
+		<NAME>Shirou
+		</NAME>
+		<RATING>5
+		</RATING>
+		<COMMENT>Very Good.
+		</COMMENT>
+	</R>
+	<R id="105">
+		<NAME>Reiner
+		</NAME>
+		<RATING>3
+		</RATING>
+		<COMMENT>There are few bugs that need to be fixed.
+		</COMMENT>
+	</R>
+	<R id="106">
+		<NAME>Bertolt
+		</NAME>
+		<RATING>4
+		</RATING>
+		<COMMENT>Good
+		</COMMENT>
+	</R>
+	<R id="107">
+		<NAME>Ezekiel
+		</NAME>
+		<RATING>3
+		</RATING>
+		<COMMENT>
+		</COMMENT>
+	</R>
+	<R id="108">
+		<NAME>Kenny
+		</NAME>
+		<RATING>4
+		</RATING>
+		<COMMENT>
+		</COMMENT>
+	</R>
+</REVIEWS>

@@ -51,6 +51,34 @@
   -moz-animation: AnimationName 5s ease infinite;
   animation: AnimationName 5s ease infinite;
 }
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+ tr:nth-child(even){background-color: #f2f2f2;}
+ tr:hover {background-color: #ddd;}
+
+
+button {
+        display: inline-block;
+        background-color: #7b38d8;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        width: 150px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
 
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
@@ -78,8 +106,11 @@
 			border: 2px ;
 			background-color: rgba(0,0,0,0);
 			font-family=wilmina;
+      height:100%;
+      width:50%;
 
 		}
+
 		@font-face
 		{
 			font-family:york;
@@ -149,6 +180,7 @@
 		font-size: 10px;
 		text-shadow: transparent;
 	}
+
 
 
 	</style>
@@ -469,6 +501,77 @@ src="https://www.youtube.com/embed/JakajdJM1q4">
 			<th span style="font-size:18px">Unlimited </th>
 		</tr>
 	</table>
+  <div id="review">
+  <H1 style="font-family: Arial;font-size:30pt;color:#99e600">Customer Reviews</H1>
+  <select align="left">
+    <option value="5">5 starts</option>
+    <option value="4">4 starts</option>
+    <option value="3">3 starts</option>
+    <option value="2">2 starts</option>
+    <option value="1">1 starts</option>
+  </select>
+  <button type="button" id="button1" onclick="loadXMLDoc()">Get Reviews</button>
+</div>
+
+<br>
+<br>
+<div id="tablepart">
+<table id="demo" align="center"> </table>
+<button type="button" id="hidebutton">Hide Reviews</button>
+</div>
+</center>
+<script language="JavaScript">
+
+
+function loadXMLDoc() {
+  if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "reviews.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Name</th><th>Ratings</th><th>Review</th></tr>";
+  var x = xmlDoc.getElementsByTagName("R");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("RATING")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("COMMENT")[0].childNodes[0].nodeValue+"</td><tr>";
+  }
+  document.getElementById("demo").innerHTML  = table;
+}
+
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("#button1").fadeOut();
+    $("#button1").fadeOut("slow");
+    $("#button1").fadeOut(3000);
+    $("#tablepart").show();
+  });
+  $("#hidebutton").click(function(){
+    $("#tablepart").hide();
+    $("#button1").show();
+
+
+  });
+});
+
+</script>
 </center>
 
 </body>

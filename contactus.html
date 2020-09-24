@@ -44,9 +44,8 @@
 <br>
 <br>
  <div class="container pt-3" >
- <p >Name: Talk Mate Private Limited</p>
- <p>Address: ABC Towers, XYZ Building,New OOO</p>
- <p>Mobile Number: 0621-785987, 6598745629</p>
+ <p id="para" ></p>
+
  </div>
  <br>
  <br>
@@ -65,3 +64,58 @@
 
   </body>
   </html>
+
+  <script>
+
+
+// var json = `{
+//     "address": {
+//         "name": "XUZ Brooklyn",
+//         "street": "11/21 dayno street",
+//         "block": 21,
+//         "district": "sasasas",
+//         "state": "Pensylvania",
+//         "phone":"9898760987"
+//     }
+// }`;
+
+fetch('contact.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    appendData(data);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+
+
+function appendData(data) {
+  var mainContainer = document.getElementById("para");
+  for (var i = 0; i < data.length; i++) {
+    var div = document.createElement("div");
+    div.innerHTML = 'Address: ' + data[i].block + ' ' + data[i].street+' '+data[i].district;
+    mainContainer.appendChild(div);
+  }
+}
+// Converting JSON object to JS object
+//var obj = JSON.parse(json);
+
+// Define recursive function to print nested values
+function printValues(obj) {
+    for(var k in obj) {
+        if(obj[k] instanceof Object) {
+            printValues(obj[k]);
+        } else {
+            document.write(obj[k] + "<br>");
+        };
+    }
+};
+
+// Printing all the values from the resulting object
+printValues(obj);
+
+
+
+</script>
